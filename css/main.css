@@ -535,6 +535,14 @@ html, body {
   padding: 40px 30px;   /* сверху/снизу есть, слева/справа нет */
 }
 
+@media (max-width: 480px) {
+  .gallery {
+    column-count: 2;   /* было 4 → стало 2 */
+    column-gap: 15px;  /* расстояние меньше */
+    padding: 20px 15px;
+  }
+}
+
 .item {
   break-inside: avoid;
   margin-bottom: 20px;
